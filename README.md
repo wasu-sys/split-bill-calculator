@@ -56,7 +56,7 @@ Status reflects what is currently present in the repository or what still needs 
 
 Paste these into the final submission package:
 
-- Live demo: `https://your-live-demo-url`
+- Live demo: `https://split-bill-calculator-self.vercel.app/`
 - Deployed contract address: `0x0000000000000000000000000000000000000000`
 - Transaction hash: `0x0000000000000000000000000000000000000000000000000000000000000000`
 - Mobile screenshot: `./submission/mobile-ui.png`
