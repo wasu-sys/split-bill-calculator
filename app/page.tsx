@@ -26,7 +26,7 @@ export default function HomePage() {
 
   const handleWalletConnect = async () => {
     setLoading(true);
-    setStatus('Requesting wallet access…');
+    setStatus('Requesting wallet access...');
 
     try {
       const wallet = await connectWallet();
@@ -34,7 +34,7 @@ export default function HomePage() {
       if (wallet.connected && wallet.address) {
         setConnected(true);
         setWalletAddress(wallet.address);
-        setStatus(`Wallet connected: ${wallet.address.slice(0, 6)}…${wallet.address.slice(-4)}`);
+        setStatus(`Wallet connected: ${wallet.address.slice(0, 6)}...${wallet.address.slice(-4)}`);
       } else {
         setStatus('Wallet connection was declined or unavailable.');
       }
@@ -47,7 +47,7 @@ export default function HomePage() {
 
   const simulateFlow = async () => {
     setLoading(true);
-    setStatus('Submitting task creation transaction…');
+    setStatus('Submitting task creation transaction...');
     setEvents(demoEvents.map((event) => ({ ...event, status: event.id === 1 ? 'done' : 'pending' })));
 
     try {
@@ -57,7 +57,7 @@ export default function HomePage() {
 
       const txHash = await createTaskOnChain(walletAddress);
       setConnected(true);
-      setStatus(`Transaction submitted: ${txHash.slice(0, 10)}…`);
+      setStatus(`Transaction submitted: ${txHash.slice(0, 10)}...`);
       setEvents((current) => current.map((event) => (event.id === 2 ? { ...event, status: 'active' } : event)));
     } catch (error) {
       setStatus('Transaction failed. Please ensure your wallet and contract deployment are ready.');
@@ -83,7 +83,7 @@ export default function HomePage() {
               onClick={connected ? simulateFlow : handleWalletConnect}
               className="rounded-full bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400"
             >
-              {loading ? 'Working…' : connected ? 'Replay demo' : providerAvailable ? 'Connect wallet' : 'Run demo flow'}
+              {loading ? 'Working...' : connected ? 'Replay demo' : providerAvailable ? 'Connect wallet' : 'Run demo flow'}
             </button>
             <a
               href="#architecture"
@@ -108,10 +108,10 @@ export default function HomePage() {
         <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-6">
           <h2 className="text-xl font-semibold">What this demo highlights</h2>
           <ul className="mt-4 space-y-3 text-sm text-slate-300">
-            <li>• Advanced smart contract orchestration</li>
-            <li>• Inter-contract escrow and payout flow</li>
-            <li>• Responsive UI with loading and error states</li>
-            <li>• Contract tests plus deployment automation</li>
+            <li>- Advanced smart contract orchestration</li>
+            <li>- Inter-contract escrow and payout flow</li>
+            <li>- Responsive UI with loading and error states</li>
+            <li>- Contract tests plus deployment automation</li>
           </ul>
 
           <div className="mt-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/10 p-4">
