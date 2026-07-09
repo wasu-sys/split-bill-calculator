@@ -6,3 +6,5 @@ coverage/
 .env
 .env.*
 .DS_Store
+web-fullstack-starter/
+web3-fullstack-starter/
