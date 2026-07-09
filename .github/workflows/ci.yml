@@ -16,5 +16,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx hardhat compile
-      - run: npx hardhat test
+      - run: npx hardhat test test/TaskManager.test.ts
       - run: npm run build

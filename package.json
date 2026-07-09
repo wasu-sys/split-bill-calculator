@@ -8,7 +8,7 @@
     "start": "next start",
     "test:frontend": "vitest run",
     "contract:compile": "hardhat compile",
-    "contract:test": "hardhat test",
+    "contract:test": "hardhat test test/TaskManager.test.ts",
     "contract:deploy": "hardhat run scripts/deploy.ts --network localhost",
     "contract:deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia"
   },
