@@ -56,10 +56,11 @@ Status reflects what is currently present in the repository or what still needs 
 
 Paste these into the final submission package:
 
-- Live demo: `https://split-bill-calculator-self.vercel.app/`
+- Live demo: https://split-bill-calculator-self.vercel.app/#architecture
 - Deployed contract address: `0x0000000000000000000000000000000000000000`
 - Transaction hash: `0x0000000000000000000000000000000000000000000000000000000000000000`
-- Mobile screenshot: `./submission/mobile-ui.png`
+- Mobile screenshot: <img width="826" height="248" alt="Screenshot 2026-07-09 221954" src="https://github.com/user-attachments/assets/cf5f1125-9a5d-4e88-8898-268b9db11fdb" />
+
 - CI screenshot: `./submission/ci-passed.png`
 - Demo video: `https://your-demo-video-url`
 
