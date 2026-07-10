@@ -63,7 +63,8 @@ Paste these into the final submission package:
 ion/mobile-ui.png
 
 
-- CI screenshot: `./submission/ci-passed.png`
+- CI screenshot: ./<img width="1872" height="901" alt="Screenshot 2026-07-10 191632" src="https://github.com/user-attachments/assets/073f36f3-83cf-408b-a757-b80d4e383ebc" />
+submission/ci-passed.png
 - Demo video: `https://your-demo-video-url`
 
 ## Final Submission Notes
