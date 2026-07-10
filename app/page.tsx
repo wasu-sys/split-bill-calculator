@@ -39,7 +39,8 @@ export default function HomePage() {
         setStatus('Wallet connection was declined or unavailable.');
       }
     } catch (error) {
-      setStatus('Wallet connection failed. Please try again.');
+      console.error('Wallet connection failed:', error);
+      setStatus(error instanceof Error ? error.message : 'Wallet connection failed. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -60,7 +61,8 @@ export default function HomePage() {
       setStatus(`Transaction submitted: ${txHash.slice(0, 10)}...`);
       setEvents((current) => current.map((event) => (event.id === 2 ? { ...event, status: 'active' } : event)));
     } catch (error) {
-      setStatus('Transaction failed. Please ensure your wallet and contract deployment are ready.');
+      console.error('Transaction flow failed:', error);
+      setStatus(error instanceof Error ? error.message : 'Transaction failed. Please ensure your wallet and contract deployment are ready.');
     } finally {
       setLoading(false);
     }

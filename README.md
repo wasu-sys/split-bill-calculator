@@ -19,6 +19,8 @@ Production-ready Stellar/Web3 starter with smart contracts, a responsive fronten
 4. Run frontend tests: `npm run test:frontend`
 5. Start the app: `npm run dev`
 
+> Wallet note: the current app flow is wired for an EVM wallet such as MetaMask on Sepolia, not Freighter.
+
 ## Project Structure
 
 - `contracts/TaskToken.sol` mints the demo token used in the workflow.

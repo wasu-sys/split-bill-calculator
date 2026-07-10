@@ -7,16 +7,10 @@ afterEach(() => {
 });
 
 describe('connectWallet', () => {
-  it('reports no provider when ethereum is missing', async () => {
+  it('throws when ethereum is missing', async () => {
     Reflect.deleteProperty(window, 'ethereum');
 
-    const wallet = await connectWallet();
-
-    expect(wallet).toEqual({
-      address: null,
-      connected: false,
-      providerAvailable: false,
-    });
+    await expect(connectWallet()).rejects.toThrow(/No Ethereum wallet provider/i);
   });
 
   it('returns the first account when a provider approves access', async () => {

@@ -18,6 +18,6 @@ describe('HomePage', () => {
 
     await user.click(screen.getByRole('button', { name: /run demo flow/i }));
 
-    expect(await screen.findByText(/wallet connection was declined or unavailable/i)).toBeInTheDocument();
+    expect(await screen.findByText(/Install MetaMask and switch to Sepolia/i)).toBeInTheDocument();
   });
 });
