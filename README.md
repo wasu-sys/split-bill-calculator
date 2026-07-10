@@ -59,7 +59,8 @@ Paste these into the final submission package:
 - Live demo: [split-bill-calculator-self.vercel.app](https://split-bill-calculator-self.vercel.app/#architecture)
 - Deployed contract address: [`0x063cB2D153C7d31da5e8377eEDD981F09a349235`](https://sepolia.etherscan.io/address/0x063cB2D153C7d31da5e8377eEDD981F09a349235)
 - Transaction hash: [`0xa7565dde7a35a7c1a398958186b5d544f37422cb084ae035ac64e4c5c283ed42`](https://sepolia.etherscan.io/tx/0xa7565dde7a35a7c1a398958186b5d544f37422cb084ae035ac64e4c5c283ed42)
-- Mobile screenshot: `./submission/mobile-ui.png`
+- Mobile screenshot: ./submiss<img width="370" height="760" alt="Screenshot 2026-07-10 175228" src="https://github.com/user-attachments/assets/6078eeaf-c239-4d51-b003-8056dcf21e93" />
+ion/mobile-ui.png
 - CI screenshot: `./submission/ci-passed.png`
 - Demo video: `https://your-demo-video-url`
 
