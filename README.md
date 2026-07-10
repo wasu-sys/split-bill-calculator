@@ -45,8 +45,8 @@ Status reflects what is currently present in the repository or what still needs 
 - README with complete documentation: complete
 - Minimum 10+ meaningful commits: not yet complete
 - Live demo link: not yet provided
-- Contract deployment address: not yet provided
-- Transaction hash for contract interaction: not yet provided
+- Contract deployment address: complete
+- Transaction hash for contract interaction: complete
 - Mobile responsive UI screenshot: not yet provided
 - CI/CD pipeline screenshot: not yet provided
 - Test output with 3+ passing tests: complete
@@ -57,10 +57,9 @@ Status reflects what is currently present in the repository or what still needs 
 Paste these into the final submission package:
 
 - Live demo: https://split-bill-calculator-self.vercel.app/#architecture
-- Deployed contract address: `0x0000000000000000000000000000000000000000`
-- Transaction hash: `0x0000000000000000000000000000000000000000000000000000000000000000`
-- Mobile screenshot: <img width="826" height="248" alt="Screenshot 2026-07-09 221954" src="https://github.com/user-attachments/assets/cf5f1125-9a5d-4e88-8898-268b9db11fdb" />
-
+- Deployed contract address: `0x063cB2D153C7d31da5e8377eEDD981F09a349235`
+- Transaction hash: `0xa7565dde7a35a7c1a398958186b5d544f37422cb084ae035ac64e4c5c283ed42`
+- Mobile screenshot: `./submission/mobile-ui.png`
 - CI screenshot: `./submission/ci-passed.png`
 - Demo video: `https://your-demo-video-url`
 
@@ -68,7 +67,7 @@ Paste these into the final submission package:
 
 - The repository now includes 4 frontend tests and 1 contract test.
 - The Hardhat network is pinned to the standard test mnemonic for repeatable local runs.
-- Before submitting, add the real deployment address, transaction hash, live demo URL, screenshots, and demo video link.
+- Before submitting, add the mobile and CI screenshots plus the demo video link.
 
 ## Sepolia Deploy
 
