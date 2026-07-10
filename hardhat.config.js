@@ -1,4 +1,7 @@
+require('dotenv').config();
 require('@nomicfoundation/hardhat-toolbox');
+
+const sepoliaAccounts = process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [];
 
 /** @type {import('hardhat/config').HardhatUserConfig} */
 module.exports = {
@@ -24,6 +27,10 @@ module.exports = {
       accounts: {
         mnemonic: 'test test test test test test test test test test test junk',
       },
+    },
+    sepolia: {
+      url: process.env.SEPOLIA_RPC_URL || '',
+      accounts: sepoliaAccounts,
     },
   },
 };

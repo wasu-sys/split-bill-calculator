@@ -68,3 +68,9 @@ Paste these into the final submission package:
 - The repository now includes 4 frontend tests and 1 contract test.
 - The Hardhat network is pinned to the standard test mnemonic for repeatable local runs.
 - Before submitting, add the real deployment address, transaction hash, live demo URL, screenshots, and demo video link.
+
+## Sepolia Deploy
+
+1. Set `SEPOLIA_RPC_URL` and `PRIVATE_KEY` in `.env`.
+2. Deploy with `npm run contract:deploy:sepolia`.
+3. Copy the printed `TaskManager` address and transaction hash into the submission checklist.
