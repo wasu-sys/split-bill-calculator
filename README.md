@@ -57,8 +57,8 @@ Status reflects what is currently present in the repository or what still needs 
 Paste these into the final submission package:
 
 - Live demo: https://split-bill-calculator-self.vercel.app/#architecture
-- Deployed contract address:[0x063cB2D153C7d31da5e8377eEDD981F09a349235]
-- Transaction hash: [0xa7565dde7a35a7c1a398958186b5d544f37422cb084ae035ac64e4c5c283ed42]
+- Deployed contract address: [`0x063cB2D153C7d31da5e8377eEDD981F09a349235`](https://sepolia.etherscan.io/address/0x063cB2D153C7d31da5e8377eEDD981F09a349235)
+- Transaction hash: [`0xa7565dde7a35a7c1a398958186b5d544f37422cb084ae035ac64e4c5c283ed42`](https://sepolia.etherscan.io/tx/0xa7565dde7a35a7c1a398958186b5d544f37422cb084ae035ac64e4c5c283ed42)
 - Mobile screenshot: ./su<img width="370" height="760" alt="Screenshot 2026-07-10 175228" src="https://github.com/user-attachments/assets/818968d4-0840-43f8-b828-9be76defb9ba" />
 bmission/mobile-ui.png
 - CI screenshot: `./submission/ci-passed.png`
