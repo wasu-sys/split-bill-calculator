@@ -72,5 +72,6 @@ Every push and pull request runs the Soroban WASM build, Rust contract tests, fr
 - Mobile UI
 - passing CI:<img width="1885" height="896" alt="Screenshot 2026-07-11 143810" src="https://github.com/user-attachments/assets/db7a7f70-7258-4e8f-9908-fc390888e263" />
 
-- passing test screenshots: capture after the associated workflows run.
+- passing test screenshots: <img width="1187" height="501" alt="Screenshot 2026-07-11 144714" src="https://github.com/user-attachments/assets/2a78409f-057c-4224-9987-8f3b08fd89d0" />
+
 - Demo video: add your 1-2 minute recording link.
