@@ -57,9 +57,18 @@ export default function HomePage() {
       }
 
       const billId = BigInt(Date.now());
+      setEvents((current) =>
+        current.map((event) =>
+          event.id === 2 ? { ...event, status: 'active' } : event.id === 3 ? { ...event, status: 'active' } : event
+        )
+      );
       const transaction = await createBillOnChain(walletAddress, billId, 1000n);
       setConnected(true);
-      setEvents((current) => current.map((event) => (event.id === 2 ? { ...event, status: 'active' } : event)));
+      setEvents((current) =>
+        current.map((event) =>
+          event.id === 2 || event.id === 3 ? { ...event, status: 'done' } : event
+        )
+      );
       setStatus(`Bill created on Stellar Testnet. Transaction: ${transaction.hash}`);
     } catch (error) {
       console.error('Transaction flow failed:', error);

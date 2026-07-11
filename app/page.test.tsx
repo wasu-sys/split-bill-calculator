@@ -48,5 +48,6 @@ describe('HomePage', () => {
 
     expect(createBillOnChainMock).toHaveBeenCalledWith('GABCD1234EFGH5678IJKL9012MNOP3456QRST7890', expect.any(BigInt), 1000n);
     expect(await screen.findByText(/Transaction: abc123/i)).toBeInTheDocument();
+    expect(screen.getByText(/Soroban RPC confirms the submitted transaction/i).previousElementSibling).toHaveClass('bg-cyan-400');
   });
 });
