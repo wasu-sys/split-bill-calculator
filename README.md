@@ -65,6 +65,7 @@ Every push and pull request runs the Soroban WASM build, Rust contract tests, fr
 ## Live Transaction Example
 
 - Transaction hash: [`eac3d1091a93a8de305b180789094e4994ed2262141f29e97222cdb6afd942b2`](https://stellar.expert/explorer/testnet/tx/eac3d1091a93a8de305b180789094e4994ed2262141f29e97222cdb6afd942b2)
+- Latest live transaction hash: [`b6ad77e795de80a751cde31b5baa349833d45185d7454a3dd2398256938463c1`](https://stellar.expert/explorer/testnet/tx/b6ad77e795de80a751cde31b5baa349833d45185d7454a3dd2398256938463c1)
 
 ## Submission Artifacts
 
