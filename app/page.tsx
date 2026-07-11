@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from 'react';
-import { createTaskOnChain } from './contract';
+import { createBillOnChain } from './contract';
 import { demoEvents } from './events';
 import { connectWallet } from './wallet';
 
@@ -12,7 +12,7 @@ const stats = [
 ];
 
 export default function HomePage() {
-  const [status, setStatus] = useState('Ready to launch your Web3 demo');
+  const [status, setStatus] = useState('Ready to create a split bill on Stellar Testnet');
   const [loading, setLoading] = useState(false);
   const [connected, setConnected] = useState(false);
   const [walletAddress, setWalletAddress] = useState<string | null>(null);
@@ -20,7 +20,7 @@ export default function HomePage() {
   const [events, setEvents] = useState(demoEvents);
 
   const cardText = useMemo(
-    () => 'Inter-contract communication, wallet-aware interactions, event streaming, and deployment automation are built in.',
+    () => 'Soroban smart contracts, Freighter signing, RPC transaction submission, and real-time status updates work together here.',
     []
   );
 
@@ -48,7 +48,7 @@ export default function HomePage() {
 
   const simulateFlow = async () => {
     setLoading(true);
-    setStatus('Submitting task creation transaction...');
+    setStatus('Preparing Soroban create_bill transaction...');
     setEvents(demoEvents.map((event) => ({ ...event, status: event.id === 1 ? 'done' : 'pending' })));
 
     try {
@@ -56,10 +56,11 @@ export default function HomePage() {
         throw new Error('Connect a wallet first');
       }
 
-      const txHash = await createTaskOnChain(walletAddress);
+      const billId = BigInt(Date.now());
+      const transaction = await createBillOnChain(walletAddress, billId, 1000n);
       setConnected(true);
-      setStatus(`Transaction submitted: ${txHash.slice(0, 10)}...`);
       setEvents((current) => current.map((event) => (event.id === 2 ? { ...event, status: 'active' } : event)));
+      setStatus(`Bill created on Stellar Testnet. Transaction: ${transaction.hash}`);
     } catch (error) {
       console.error('Transaction flow failed:', error);
       setStatus(error instanceof Error ? error.message : 'Transaction failed. Please ensure your wallet and contract deployment are ready.');
@@ -85,7 +86,7 @@ export default function HomePage() {
               onClick={connected ? simulateFlow : handleWalletConnect}
               className="rounded-full bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400"
             >
-              {loading ? 'Working...' : connected ? 'Replay demo' : providerAvailable ? 'Connect wallet' : 'Run demo flow'}
+              {loading ? 'Working...' : connected ? 'Create test bill' : providerAvailable ? 'Connect wallet' : 'Connect Freighter'}
             </button>
             <a
               href="#architecture"
@@ -110,8 +111,8 @@ export default function HomePage() {
         <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-6">
           <h2 className="text-xl font-semibold">What this demo highlights</h2>
           <ul className="mt-4 space-y-3 text-sm text-slate-300">
-            <li>- Advanced smart contract orchestration</li>
-            <li>- Inter-contract escrow and payout flow</li>
+            <li>- Soroban split-bill contract calls</li>
+            <li>- Freighter-signed Stellar Testnet transactions</li>
             <li>- Responsive UI with loading and error states</li>
             <li>- Contract tests plus deployment automation</li>
           </ul>

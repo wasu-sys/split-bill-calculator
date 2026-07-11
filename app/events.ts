@@ -5,7 +5,7 @@ export type DemoEvent = {
 };
 
 export const demoEvents: DemoEvent[] = [
-  { id: 1, message: 'Task created on-chain and escrow funded', status: 'done' },
-  { id: 2, message: 'Assignee marked ready for payout', status: 'pending' },
-  { id: 3, message: 'Payout released and event emitted to the UI', status: 'pending' },
+  { id: 1, message: 'Freighter account connected to Stellar Testnet', status: 'done' },
+  { id: 2, message: 'Split bill creation is ready for signature', status: 'pending' },
+  { id: 3, message: 'Soroban RPC confirms the submitted transaction', status: 'pending' },
 ];
