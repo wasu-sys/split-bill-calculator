@@ -1,3 +1,4 @@
+
 # Split Bill Calculator
 
 A Stellar Testnet dApp for tracking shared bills with a Soroban smart contract and Freighter wallet signing.
@@ -68,5 +69,8 @@ Every push and pull request runs the Soroban WASM build, Rust contract tests, fr
 ## Submission Artifacts
 
 - Contract interaction transaction: create a bill and copy the hash shown in the UI.
-- Mobile UI, passing CI, and passing test screenshots: capture after the associated workflows run.
+- Mobile UI
+- passing CI:<img width="1885" height="896" alt="Screenshot 2026-07-11 143810" src="https://github.com/user-attachments/assets/db7a7f70-7258-4e8f-9908-fc390888e263" />
+
+- passing test screenshots: capture after the associated workflows run.
 - Demo video: add your 1-2 minute recording link.
