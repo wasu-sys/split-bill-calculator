@@ -70,6 +70,10 @@ Every push and pull request runs the Soroban WASM build, Rust contract tests, fr
 ## Submission Artifacts
 
 - Contract interaction transaction: create a bill and copy the hash shown in the UI.
-- Mobile responsive UI screenshot: <img width="1885" height="896" alt="Screenshot 2026-07-11 143810" src="https://github.com/user-attachments/assets/db7a7f70-7258-4e8f-9908-fc390888e263" />
-- CI/CD pipeline screenshot: <img width="1187" height="501" alt="Screenshot 2026-07-11 144714" src="https://github.com/user-attachments/assets/2a78409f-057c-4224-9987-8f3b08fd89d0" />
+- Mobile responsive UI screenshot:<img width="1170" height="2532" alt="split-bill-calculator-self vercel app_(iPhone 12 Pro) (1)" src="https://github.com/user-attachments/assets/6df632a4-01da-4f53-bfeb-cd1503414253" />
+
+- CI/CD pipeline screenshot:<img width="1885" height="896" alt="Screenshot 2026-07-11 143810" src="https://github.com/user-attachments/assets/0689ee41-0f2e-4e64-9a36-2d723f123693" />
+
+
+
 - Demo video: add your 1-2 minute recording link.
