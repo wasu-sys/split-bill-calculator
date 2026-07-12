@@ -75,6 +75,7 @@ Every push and pull request runs the Soroban WASM build, Rust contract tests, fr
 
 - CI/CD pipeline screenshot:<img width="1885" height="896" alt="Screenshot 2026-07-11 143810" src="https://github.com/user-attachments/assets/0689ee41-0f2e-4e64-9a36-2d723f123693" />
 
+Test Output(Screenshot):<img width="1187" height="501" alt="Screenshot 2026-07-11 144714" src="https://github.com/user-attachments/assets/0cc60917-0d6d-4f70-83d2-56d831e36813" />
 
 
-- Demo video: add your 1-2 minute recording link.
+- Demo video: add your 1-2 minute recording link.https://drive.google.com/drive/my-drive
