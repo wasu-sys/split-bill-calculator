@@ -3,6 +3,17 @@
 
 A Stellar Testnet dApp for tracking shared bills with a Soroban smart contract and Freighter wallet signing.
 
+## Smart Contract Source Code
+
+The complete project-specific Soroban smart contract source is available at [`soroban/src/lib.rs`](soroban/src/lib.rs). It implements `create_bill`, `add_participant`, `pay_share`, `settle_bill`, `get_bill`, and `get_participant`, including authorization, persistent storage, input validation, custom errors, and Rust tests.
+
+Verify contract compilation and run the contract tests from the repository root:
+
+```sh
+npm run contract:compile
+npm run contract:test
+```
+
 ## Features
 
 - Soroban Rust contract for `create_bill`, `add_participant`, `pay_share`, and `settle_bill`
